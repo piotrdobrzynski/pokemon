@@ -3,6 +3,8 @@
 2. W drugiej konsoli react-native run android
 
 --odpalanie macos
+1. Pierwszy terminal npx react-native start
+2. Drugi terminal npx react-native run-android
 
 --w trakcie prac
 1. przygotowanie repo
