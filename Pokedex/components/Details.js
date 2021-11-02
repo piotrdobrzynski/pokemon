@@ -15,3 +15,4 @@ const Details = props => {
       .then(details => setDetails(details));
   };
 }
+export default Details;
