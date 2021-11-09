@@ -14,5 +14,16 @@ const Details = props => {
       .then(res => res.json())
       .then(details => setDetails(details));
   };
+  return(<View></View>);
 }
 export default Details;
+
+const styles = StyleSheet.create({  
+  container: {    
+   display: 'flex',    
+   flexDirection: 'row',    
+   flexWrap: 'wrap',    
+   justifyContent: 'center',    
+   marginTop: 30,  
+  }, 
+});
