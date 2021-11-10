@@ -14,5 +14,18 @@ const Pokemons = (props) => {
             .then(response => response.json())
             .then(pokemons => setPokemons(pokemons.results));
     };
+
+    return(<View></View>)
 }
 export default Pokemons;
+
+
+const styles = StyleSheet.create({  
+    container: {    
+     display: 'flex',    
+     flexDirection: 'row',    
+     flexWrap: 'wrap',    
+     justifyContent: 'center',    
+     marginTop: 30,  
+    },
+    });
