@@ -18,12 +18,18 @@ const Details = props => {
 }
 export default Details;
 
-const styles = StyleSheet.create({  
-  container: {    
-   display: 'flex',    
-   flexDirection: 'row',    
-   flexWrap: 'wrap',    
-   justifyContent: 'center',    
-   marginTop: 30,  
-  }, 
+const styles = StyleSheet.create({
+  image: {
+    width: 200,
+    height: 200,
+  },
+  text: {
+    fontSize: 22,
+    marginBottom: 15,
+  },
+  indicator: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
