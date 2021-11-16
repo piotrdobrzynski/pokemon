@@ -27,5 +27,13 @@ const styles = StyleSheet.create({
      flexWrap: 'wrap',    
      justifyContent: 'center',    
      marginTop: 30,  
-    },
+    },  
+    card: {    
+     display: 'flex',    
+     alignItems: 'center',    
+     borderBottomWidth: 1,    
+     borderBottomColor: 'black',    
+     marginHorizontal: 20,    
+     marginVertical: 10,  
+    },  
     });
