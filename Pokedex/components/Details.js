@@ -14,8 +14,12 @@ const Details = props => {
       .then(res => res.json())
       .then(details => setDetails(details));
   };
-  return(<View></View>);
-}
+  return (
+    <View style={styles.indicator}>
+      <ActivityIndicator size="large" color="#E63F34" />
+    </View>
+  );
+};
 export default Details;
 
 const styles = StyleSheet.create({
