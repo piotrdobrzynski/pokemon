@@ -25,6 +25,28 @@ const Pokemons = (props) => {
               value={searchfeild}
             />
           </View>
+          <ScrollView>
+            <View style={styles.container}>
+              {pokemons
+                .filter(pokemon =>
+                  pokemon.name.toLowerCase().includes(searchfeild.toLowerCase())
+                )
+                .map((pokemon, index) => {
+                  return (
+                    <TouchableOpacity
+                      activeOpacity={0.5}
+                      key={index}
+                      style={styles.card}
+                      onPress={() =>
+                        props.navigation.navigate('Details', {
+                          pokemon: pokemon.name,
+                        })
+                      }>
+                    </TouchableOpacity>
+                  );
+                })}
+            </View>
+          </ScrollView>
         </View>
       );
 }
