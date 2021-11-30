@@ -15,7 +15,18 @@ const Pokemons = (props) => {
             .then(pokemons => setPokemons(pokemons.results));
     };
 
-    return(<View></View>)
+    return (
+        <View>
+          <View style={styles.searchCont}>
+            <TextInput
+              style={styles.searchfeild}
+              placeholder="Search Pokemons"
+              onChangeText={value => setSearchfeild(value)}
+              value={searchfeild}
+            />
+          </View>
+        </View>
+      );
 }
 export default Pokemons;
 
