@@ -14,7 +14,18 @@ const Details = props => {
       .then(res => res.json())
       .then(details => setDetails(details));
   };
-  return (
+  return details.name ? (
+    <View style={{flex: 1, alignItems: 'center'}}>
+      <Image
+        style={styles.image}
+        source={{
+          uri: `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/${
+            details.name
+          }.png`,
+        }}
+      />
+    </View>
+  ) : (
     <View style={styles.indicator}>
       <ActivityIndicator size="large" color="#E63F34" />
     </View>
