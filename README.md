@@ -4,7 +4,7 @@
 
 --odpalanie macos
 1. Pierwszy terminal npx react-native start
-2. Drugi terminal npx react-native run-android
+2. Drugi terminal npx react-native run-android - wystarczy tylko ta komenda
 
 --w trakcie prac
 1. przygotowanie repo
