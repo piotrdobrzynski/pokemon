@@ -24,6 +24,11 @@ const Details = props => {
           }.png`,
         }}
       />
+
+      <Text style={styles.text}>Name: {details.name}</Text>
+      <Text style={styles.text}>Height: {details.height}</Text>
+      <Text style={styles.text}>Weight: {details.weight}</Text>
+
     </View>
   ) : (
     <View style={styles.indicator}>
