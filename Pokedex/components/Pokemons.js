@@ -42,6 +42,15 @@ const Pokemons = (props) => {
                           pokemon: pokemon.name,
                         })
                       }>
+                      <Image
+                        style={{width: 150, height: 150}}
+                        source={{
+                          uri: `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/${
+                            pokemon.name
+                          }.png`,
+                        }}
+                      />
+                      <Text>{pokemon.name}</Text>
                     </TouchableOpacity>
                   );
                 })}
