@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import Pokemons from './Components/Pokemons';
-import Details from './Components/Details';
+import Pokemons from './components/Pokemons';
+import Details from './components/Details';
 
 const appNavigator = createStackNavigator(
   {
