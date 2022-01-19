@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, ScrollView, Image, TouchableOpacity, StyleSheet, TextInput} from 'react-native';
+import FastImage from 'react-native-fast-image';
 
 const Pokemons = (props) => {
     const [pokemons, setPokemons] = useState([]);
@@ -62,35 +63,35 @@ const Pokemons = (props) => {
 export default Pokemons;
 
 
-const styles = StyleSheet.create({  
-  container: {    
-   display: 'flex',    
-   flexDirection: 'row',    
-   flexWrap: 'wrap',    
-   justifyContent: 'center',    
-   marginTop: 30,  
-  },  
-  card: {    
-   display: 'flex',    
-   alignItems: 'center',    
-   borderBottomWidth: 1,    
-   borderBottomColor: 'black',    
-   marginHorizontal: 20,    
-   marginVertical: 10,  
-  },  
-  searchCont: {    
-   position: 'absolute',    
-   marginBottom: 70,    
-   left: '20%',    
-   zIndex: 1,    
-   marginTop: 10,  
-  },  
-  searchfeild: {    
-  height: 40,    
-  borderWidth: 1,    
-  borderColor: '#000',    
-  textAlign: 'center',    
-  width: 250,    
-  borderRadius: 50,  
+const styles = StyleSheet.create({
+  container: {
+   display: 'flex',
+   flexDirection: 'row',
+   flexWrap: 'wrap',
+   justifyContent: 'center',
+   marginTop: 30,
+  },
+  card: {
+   display: 'flex',
+   alignItems: 'center',
+   borderBottomWidth: 1,
+   borderBottomColor: 'black',
+   marginHorizontal: 20,
+   marginVertical: 10,
+  },
+  searchCont: {
+   position: 'absolute',
+   marginBottom: 70,
+   left: '20%',
+   zIndex: 1,
+   marginTop: 10,
+  },
+  searchfeild: {
+  height: 40,
+  borderWidth: 1,
+  borderColor: '#000',
+  textAlign: 'center',
+  width: 250,
+  borderRadius: 50,
   },
   });
