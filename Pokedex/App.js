@@ -18,7 +18,7 @@ const appNavigator = createStackNavigator(
   },
 );
 
-const AppContainer = createAppContainer(stackNavigator);
+const AppContainer = createAppContainer(appNavigator);
 
 class App extends Component {
   render() {
